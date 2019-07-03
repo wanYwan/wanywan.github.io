@@ -1,0 +1,99 @@
+body{
+    
+    display: flex;
+   flex-direction: column;
+   
+   margin: 0 auto;
+}
+@font-face{
+    font-family: 'ch';
+    src:url('包图小白体.ttf');
+}
+
+
+
+header{
+    background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562065748265&di=3c17ad7dca0725f16c0941a0258b7a75&imgtype=0&src=http://bpic.588ku.com/back_pic/03/70/34/2757b664979a39f.jpg) no-repeat center;
+   background-size: 1500px 380px;
+    display: flex;
+    
+    flex-direction:column;
+    z-index: 0;
+    height: 380px;
+    width: 1500px;
+    
+    
+
+  
+}
+nav{
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 230px 50px 200px;
+    font-size: 20px;
+    color: ghostwhite;
+
+}
+.personal{
+    padding: 0 10px 0 0;
+}
+.about{
+    padding: 0 0 0 10px;
+}
+.name_head{
+    
+    color:rgb(244, 244, 250);
+    
+    z-index: 1;
+
+}
+
+.name{
+    padding: 20px 0 0 380px;
+    height: 60px;
+    font-size: 60px;
+    
+    
+
+}
+
+
+.content{
+   
+    display: grid;
+    grid-row: 150px 650px;
+    grid-column: auto;
+    grid-template: 'left artical';
+    
+
+   width: 800px;
+    z-index: 2;
+    margin: 0 auto;
+    
+
+}   
+
+.left{
+    width: 100px;
+    height: 370px;
+}
+.artical{
+    text-indent: 2em;
+    grid-area: artical;
+    width: 650px;
+    color: rgb(29, 95, 161);
+
+}
+
+.post-title{
+    font-family: 'ch';
+    font-size: 200%;
+}   
+footer{
+    color: rgb(29, 95, 161);
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}    
+            
