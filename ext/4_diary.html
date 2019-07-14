@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>学习nodejs</title>
+    <link href="4_diary.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="right_up">
+        <div class="personal">
+          <a href="../index.html" style="font-family: 'ch'; color: ghostwhite" ;
+            >个人主页</a
+          >
+        </div>
+        |
+        <div class="about">
+          <a
+            href="wyr_about.html"
+            style="font-family: 'ch'; color: ghostwhite"
+            ;
+            >关于me</a
+          >
+        </div>
+      </nav>
+
+      <div class="name_head">
+        <div class="name" style="font-family: 'ch'">NodeJS服务开发实践</div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="artical">
+        <h1>一、实验过程</h1>
+
+        <h3>1.服务器环境配置</h3>
+        <p>这个过程，简直被自己蠢哭…...</p>
+        <p>
+          最开始的时候好像连服务器的基本概念和工作原理都搞不懂，所以东查西查之后终于搞明白了，原来调好服务器环境之后，传好相应的文件，就可以通过域名和端口直接访问网页，而我们平时看到的网页就是这样来的……（~~觉得自己简直白痴……~~）
+        </p>
+        <p>
+          不过搞懂之后，就可以按照网络学堂提供的教程和网上查的一些资料一点一点弄。
+        </p>
+        <h3>2.静态文件服务搭建</h3>
+        <p>
+          需要用到koa-static和path，把主页的网址传给koa-static，然后放在特定的端口即可。
+        </p>
+        <p></p>
+        <h3>3.API服务搭建</h3>
+        <p>分为五部分，对于hw-token的判断和四个函数。</p>
+        <p>
+          hw-token的判断只需要ctx.request.header['hw-token’]获得hw-token然后比对即可。
+        </p>
+        <p>
+          四个函数逻辑都比较简单，主要是对于Koa-router和async函数的使用，以及koa从ctx.request中获取参数，作出response响应的过程。四个函数分别用router.post()、router.del()、router.get()写好，然后app.use(router.routes())，再放到8000端口。
+        </p>
+        <h1>二、实验总结</h1>
+        <p>
+          因为一开始很基础的东西掌握的不好，所以在网上四处找资料，感觉没有什么方向，就浪费了很多时间，而且看实验文档看的不够细致，也走了很多弯路。其实到后面的时候，把基础的东西弄懂了，单独写逻辑的时候还是挺快的，所以以后还是应该先认真看官方文档，把基础打好。而且终于把课上听得稀里糊涂的一堆概念弄明白啦，虽然用了很多时间，还是挺有成就感的。
+        </p>
+      </div>
+
+      <!--此处为图片
+                        <img class= "left" src="left.jpg"-->
+
+      <hr />
+    </div>
+
+    <footer>
+      <hr />
+      <p>^_^今天也要加油鸭^_^</p>
+      <p>Copyright © 2019 宛玉茹</p>
+    </footer>
+
+    <!--script>
+                        //博客园下雪代码
+                        (function($){$.fn.snow=function(options){var $flake=$('<div id="flake" />').css({'position':'absolute','top':'-50px'}).html('&#10052;'),documentHeight=$(document).height(),documentWidth=$(document).width(),defaults={minSize:10,maxSize:20,newOn:500,flakeColor:"#FFFFFF"},options=$.extend({},defaults,options);var interval=setInterval(function(){var startPositionLeft=Math.random()*documentWidth-100,startOpacity=0.5+Math.random(),sizeFlake=options.minSize+Math.random()*options.maxSize,endPositionTop=documentHeight-40,endPositionLeft=startPositionLeft-100+Math.random()*200,durationFall=documentHeight*10+Math.random()*5000;$flake.clone().appendTo('body').css({left:startPositionLeft,opacity:startOpacity,'font-size':sizeFlake,color:options.flakeColor}).animate({top:endPositionTop,left:endPositionLeft,opacity:0.2},durationFall,'linear',function(){$(this).remove()});},options.newOn);};})(jQuery);
+                        $.fn.snow({ minSize: 5, maxSize: 50, newOn: 1000, flakeColor: '#FFF' });
+                        </script-->
+  </body>
+</html>

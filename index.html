@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>宛宛</title>
+    <link href="ext/Untitled-1.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="right_up">
+        <div class="personal">
+          <a href="index.html" style="font-family: 'ch'; color: ghostwhite" ;
+            >个人主页</a
+          >
+        </div>
+        |
+        <div class="about">
+          <a
+            href="ext/wyr_about.html"
+            style="font-family: 'ch'; color: ghostwhite"
+            ;
+            >关于me</a
+          >
+        </div>
+      </nav>
+
+      <div class="name_head">
+        <div class="en">fancy world</div>
+        <div class="name">of宛玉茹</div>
+      </div>
+    </header>
+
+    <div class="content">
+      <!--个人日志部分-->
+
+      <div class="post-preview">
+        <!--每个日志的结构-->
+        <a
+          href="ext/first_diary.html"
+          style="text-decoration: none; color: rgb(29, 95, 161)"
+        >
+          <h2 class="post-title">初识web</h2>
+        </a>
+        <time class="post-meta__date">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          2019-7-3
+        </time>
+        <article>
+          <p>
+            上了Web前端技术实训第一课，从html到css，感觉平时看到的那些炫酷精美的页面和自己的距离小了很多，感觉很有趣！也很有收获...
+          </p>
+        </article>
+        <hr />
+      </div>
+      <div class="post-preview">
+        <!--每个日志的结构-->
+        <a
+          href="ext/4_diary.html"
+          style="text-decoration: none; color: rgb(29, 95, 161)"
+        >
+          <h2 class="post-title">NodeJS服务开发实践</h2>
+        </a>
+        <time class="post-meta__date">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          2019-7-14
+        </time>
+        <article>
+          <p>
+            终于写完第四次作业啦，虽然这个过程有一点郁闷（也有一点蠢），但是还是很有成就感，也学到了很多东西...
+          </p>
+        </article>
+        <hr />
+      </div>
+    </div>
+
+    <footer>
+      <hr />
+      <p>^_^今天也要加油鸭^_^</p>
+      <p>Copyright © 2019 宛玉茹</p>
+    </footer>
+
+    <!--script>
+                //博客园下雪代码
+                (function($){$.fn.snow=function(options){var $flake=$('<div id="flake" />').css({'position':'absolute','top':'-50px'}).html('&#10052;'),documentHeight=$(document).height(),documentWidth=$(document).width(),defaults={minSize:10,maxSize:20,newOn:500,flakeColor:"#FFFFFF"},options=$.extend({},defaults,options);var interval=setInterval(function(){var startPositionLeft=Math.random()*documentWidth-100,startOpacity=0.5+Math.random(),sizeFlake=options.minSize+Math.random()*options.maxSize,endPositionTop=documentHeight-40,endPositionLeft=startPositionLeft-100+Math.random()*200,durationFall=documentHeight*10+Math.random()*5000;$flake.clone().appendTo('body').css({left:startPositionLeft,opacity:startOpacity,'font-size':sizeFlake,color:options.flakeColor}).animate({top:endPositionTop,left:endPositionLeft,opacity:0.2},durationFall,'linear',function(){$(this).remove()});},options.newOn);};})(jQuery);
+                $.fn.snow({ minSize: 5, maxSize: 50, newOn: 1000, flakeColor: '#FFF' });
+                </script-->
+  </body>
+</html>
